@@ -1,0 +1,122 @@
+.span {
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    white-space: nowrap;
+    background-color: #120202;
+    font-family: -apple-system;
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 193, 193);
+    filter: drop-shadow(3px 3px 8px rgb(185, 183, 183));
+    animation: iconAnimation 2s ease-in-out infinite normal 0s;
+}
+
+.span3 {
+    position: relative;
+    right: 297px;
+    top: 130px;
+    z-index: 1000;
+}
+
+.span1 {
+    position: relative;
+    right: 118px;
+    top: 195px;
+    z-index: 1000;
+}
+
+.span2 {
+    position: relative;
+    right: 210px;
+    top: 255px;
+    z-index: 1000;
+}
+
+.span4 {
+    position: relative;
+    right: 390px;
+    top: 323px;
+    z-index: 1000;
+}
+
+.span5 {
+    position: relative;
+    left: 0px;
+    top: 135px;
+}
+
+.span6 {
+    position: relative;
+    left: 405px;
+    top: 172px;
+}
+
+.span7 {
+    position: relative;
+    left: 300px;
+    top: 234px;
+}
+
+.span8 {
+    position: relative;
+    left: 195px;
+    top: 300px;
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: translateY(0px);
+        filter: drop-shadow(3px 3px 8px rgba(185, 183, 183, 0.8));
+    }
+    50% {
+        transform: translateY(-10px);
+        filter: drop-shadow(3px 3px 8px rgba(185, 183, 183, 0.8));
+        border: 1px solid white;
+    }
+    100% {
+        transform: translateY(0px);
+        filter: drop-shadow(3px 4px 8px rgba(185, 183, 183, 0.8));
+        border: 1px solid white;
+    }
+}
+
+.icon {
+    color: white;
+    border-radius: 100%;
+    padding: 0px 8px 0px 3px;
+    font-size: 1.2rem;
+}
+
+.icon1 {
+    color: #F7DF1E;
+}
+
+.icon2 {
+    color: #F24E1E;
+}
+
+.icon3 {
+    color: #38BDF8;
+}
+
+.icon4 {
+    color: #61DAFB;
+}
+
+.icon5 {
+    color: #FFFFFF;
+}
+
+.icon6 {
+    color: #7952B3;
+}
+
+.icon7 {
+    color: #CC6699;
+}
+
+.icon8 {
+    color: #F05032;
+}

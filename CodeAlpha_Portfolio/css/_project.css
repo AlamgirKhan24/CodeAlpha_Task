@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tertiary-main-color: radial-gradient(circle at top, rgba(0, 0, 0, 0.829), transparent 30%), radial-gradient(circle at top left, rgba(52, 6, 6, 0.662), transparent 40%), radial-gradient(circle at bottom, #13020250, transparent 80%), radial-gradient(circle at center right, #7a0c0ca4, transparent 80%), linear-gradient(110deg, #000000, #120202);
+}
+
+#project {
+    height: 100vh;
+    background: var(--tertiary-main-color);
+    position: relative;
+    bottom: 4.1px;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+#sub-project {
+    max-width: 1000px;
+    margin: 80px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2>i {
+    display: inline-block;
+    padding: 15px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    animation: movementAnimate 1.2s ease 0.2s infinite;
+}
+
+@keyframes movementAnimate {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.projectname {
+    border-radius: 15px;
+    color: white;
+    background-color: #e60000c3;
+    box-shadow: 2px 2px 4px transparent, inset 0px 0px 15px #2a2a2a;
+    width: 270px;
+    padding: 15px 8px 15px 15px;
+    opacity: 0.8;
+}
+
+.weather-project button {
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    font-family: -apple-system;
+    position: relative;
+    left: 90px;
+    animation: buttonAnimate 3s ease-in-out 4s 1;
+}
+
+p {
+    color: aliceblue;
+    font-size: small;
+    padding-top: 10px;
+}
+
+.ecommerce button {
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    font-family: -apple-system;
+    position: relative;
+    left: 54px;
+    animation: buttonAnimate 3s ease-in-out 7s 1;
+}
+
+.car-rental button {
+    height: 25px;
+    width: 50px;
+    background-color: black;
+    font-family: -apple-system;
+    position: relative;
+    left: 75px;
+    animation: buttonAnimate 3s ease-in-out 11s 1;
+}
+
+@keyframes buttonAnimate {
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: drop-shadow(3px 4px 8px rgba(243, 241, 241, 0.8));
+    }
+    25% {
+        transform: scale(0.8) rotate(15deg);
+        filter: drop-shadow(3px 4px 8px rgba(243, 241, 241, 0.8));
+    }
+    50% {
+        transform: scale(1) rotate(-15deg);
+        filter: drop-shadow(3px 4px 8px rgba(243, 241, 241, 0.8));
+        box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+    75% {
+        transform: scale(1.2) rotate(15deg);
+        filter: drop-shadow(3px 4px 8px rgba(243, 241, 241, 0.8));
+        box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        filter: drop-shadow(3px 4px 8px rgba(243, 241, 241, 0.8));
+    }
+}
+
+.text {
+    margin: 16px 0px 0px 0px;
+}
+
+#project img {
+    height: 250px;
+    width: 240px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out 0s;
+    animation: imageAnimate 1.2s ease 2s 2;
+}
+
+#project img:hover {
+    transform: scale(1.03);
+}
+
+@keyframes imageAnimate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

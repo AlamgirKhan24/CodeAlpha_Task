@@ -1,0 +1,128 @@
+:root {
+    --tetra-main-color: radial-gradient(circle at 20% 30%, #6b1717 0%, #310e0e 30%, #000000 100%);
+}
+
+#contact {
+    height: 100vh;
+    background: var(--tetra-main-color);
+    position: relative;
+    bottom: 4.1px;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+#sub-contact-page {
+    display: grid;
+    grid-template: repeat(8, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
+
+.contact-text-section {
+    grid-column: 1 / span 6;
+    grid-row: 3/ span 5;
+    margin: 0px 0px 0px 100px;
+}
+
+.review-section {
+    grid-column: 5 / span 8;
+    grid-row: 2 / span 4;
+    margin: 15px 0px 8px 250px;
+}
+
+span {
+    color: #ff0000;
+}
+
+input {
+    color: white;
+    background: transparent;
+    border: 1.67px solid rgba(255, 255, 255, 0.507);
+    padding: 10px;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+textarea {
+    border: 1.67px solid white;
+    background: transparent;
+    border: 1.3px solid rgba(255, 255, 255, 0.507);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 6px;
+}
+
+#sub-grid {
+    /* width: 70vw; */
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+input[name="firstname"] {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+input[name="lastname"] {
+    grid-column-start: 6;
+    grid-column-end: 12;
+}
+
+input[name="email"] {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+input[name="subject"] {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+textarea {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 4;
+}
+
+button {
+    height: 35px;
+    width: 130px;
+    color: white;
+    background-color: #ff0000;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+    grid-row-start: 9;
+    transition: all 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+    opacity: 0.8;
+}
+
+button:hover {
+    color: white;
+    background: transparent;
+    border: 1.5px solid red;
+    box-shadow: inset 2px 2px 15px red;
+}
+
+button i {
+    padding-left: 8px;
+    font-size: 1.1rem;
+    animation: floatUpDown 2.3s ease-in-out infinite;
+    transition: all 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
+button:hover i {
+    color: red;
+    background: transparent;
+}
+
+@keyframes floatUpDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}

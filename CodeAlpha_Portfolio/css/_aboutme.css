@@ -1,0 +1,190 @@
+:root {
+    --secondary-main-color: radial-gradient(circle at top left, rgba(0, 0, 0, 0.237), transparent 30%), radial-gradient(circle at bottom center, #7a0c0ca4, transparent 80%), linear-gradient(110deg, #000000, #120202);
+    --secondary-color: #ff0000;
+}
+
+#about {
+    height: 100vh;
+    background: var(--secondary-main-color);
+    position: relative;
+    bottom: 4.1px;
+    box-sizing: border-box;
+}
+
+#sub-about {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#about-icon {
+    grid-column: 4 /span 8;
+    grid-row: 7 /span 7;
+    margin-left: 100px;
+}
+
+#about-image {
+    grid-column: 2/ span 4;
+    grid-row: 2 / span 5;
+    margin-right: 20px;
+}
+
+#about-text {
+    grid-column: 5 /span 5;
+    grid-row: 2 /span 4;
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+
+#about-image>img {
+    height: 330px;
+    width: 330px;
+    border-radius: 100px;
+    filter: drop-shadow(2px 2px 11px var(--secondary-color));
+}
+
+#sub-about div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sub-about div i {
+    background-color: red;
+    font-size: 2.4rem;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h2>i {
+    display: inline-block;
+    padding: 15px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    animation: movementAnimate 1.2s ease 0.2s infinite;
+}
+
+@keyframes movementAnimate {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.about-icon1 {
+    display: inline-block;
+    color: #F8F8F2;
+    border: 1px solid #F8F8F2;
+    filter: drop-shadow(0px 0px 15px #f8f8f2ea);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 0s;
+    transform-origin: center;
+}
+
+.about-icon2 {
+    display: inline-block;
+    color: #3B82F6;
+    border: 1px solid #3B82F6;
+    filter: drop-shadow(0px 0px 15px #3b82f6);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 6s;
+    transform-origin: center;
+}
+
+.about-icon3 {
+    display: inline-block;
+    color: #94A3B8;
+    border: 1px solid #94A3B8;
+    filter: drop-shadow(0px 0px 15px #94a3b8);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 12s;
+    transform-origin: center;
+}
+
+.about-icon4 {
+    display: inline-block;
+    color: #007ACC;
+    border: 1px solid #007ACC;
+    filter: drop-shadow(0px 0px 15px #007acc);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 18s;
+    transform-origin: center;
+}
+
+.about-icon5 {
+    display: inline-block;
+    color: #5865F2;
+    border: 1px solid #5865F2;
+    filter: drop-shadow(0px 0px 15px #5865f2);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 24s;
+    transform-origin: center;
+}
+
+.about-icon6 {
+    display: inline-block;
+    color: #1DB954;
+    border: 1px solid #1DB954;
+    filter: drop-shadow(0px 0px 15px #1Db954);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 30s;
+    transform-origin: center;
+}
+
+.about-icon7 {
+    display: inline-block;
+    color: #00A4EF;
+    border: 1px solid #00A4EF;
+    filter: drop-shadow(0px 0px 15px #00a4ef);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 36s;
+    transform-origin: center;
+}
+
+.about-icon8 {
+    display: inline-block;
+    color: #00d9ff;
+    border: 1px solid #00d9ff;
+    filter: drop-shadow(0px 0px 15px #00d9ff);
+    animation: rotateScale 4.5s ease-in-out 1;
+    animation-delay: 42s;
+    transform-origin: center;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(0.85);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.75);
+    }
+    /* ---- PHASE 2 (Opposite Smooth Return) ---- */
+    65% {
+        transform: rotate(90deg) scale(0.9);
+    }
+    80% {
+        transform: rotate(-90deg) scale(0.92);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
