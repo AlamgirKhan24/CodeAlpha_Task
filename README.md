@@ -16,7 +16,7 @@ A responsive gallery with category filtering and a custom-built lightbox navigat
 ### 💼 Task 2: Personal Portfolio 
 A professional portfolio website showcasing my skills, experience, and internship projects.
 * **Key Features:** Smooth scrolling, contact form, and mobile-first design.
-* **Status:** In Progress 🕒
+* **Status:** Completed ✅
 
 ---
 
